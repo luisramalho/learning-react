@@ -5,10 +5,10 @@ var webpack = require('webpack');
  */
 var config = {
   devtool: 'eval-source-map',
-  entry:  __dirname + "/app/App.js",
+  entry:  __dirname + '/source/App.js',
   output: {
-    path: __dirname + "/public",
-    filename: "bundle.js"
+    path: __dirname + '/public',
+    filename: 'bundle.js'
   },
   module: {
     loaders: [{
@@ -21,7 +21,7 @@ var config = {
     }]
   },
   devServer: {
-    contentBase: "./public",
+    contentBase: './public',
     colors: true,
     historyApiFallback: true,
     inline: true
